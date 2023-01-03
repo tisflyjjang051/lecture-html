@@ -2,6 +2,7 @@ body {
   font-family: "Pretendard", "Dotum", "돋움", sans-serif;
   color: #111;
   font-size: 16px;
+  min-height: 5000px;
 }
 p {
   line-height: 1.5;
@@ -25,6 +26,14 @@ header {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  position: fixed;
+  /* fixed body 기준  absolute 는 자기 조상 기준 */
+  top: 0;
+  color: #fff;
+  /* width: calc(100% - 100px); */
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99;
   /* flex-direction에 의해 결정된 main-axis 정렬; */
 }
 header h1 a {
@@ -34,9 +43,6 @@ header h1 a {
 }
 header h1 a img {
   height: 50px;
-}
-header nav h2 {
-  display: none;
 }
 header nav ul {
   display: flex;
@@ -52,9 +58,10 @@ header nav ul li a {
   /* width: 150px; */
   padding-left: 50px;
   padding-right: 50px;
+  padding: 0 50px;
 }
 header .link {
-  border: 2px solid #111;
+  border: 2px solid #fff;
   /* padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -68,4 +75,12 @@ header .link {
   border-bottom-right-radius: 100px; */
   border-radius: 100px 100px 100px 100px;
   border-radius: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+main section video {
+  width: 100%;
 }
