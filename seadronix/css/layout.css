@@ -28,6 +28,12 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  color: #fff;
+  z-index: 99;
+  height: 100px;
 }
 .header .logo a {
   display: flex;
@@ -43,6 +49,9 @@ img {
   display: flex;
 }
 /* a, span, em, input */
+.gnb .list > li {
+  position: relative;
+}
 .gnb .list > li > a {
   height: 100px;
   display: flex;
@@ -56,8 +65,36 @@ img {
   transition: color 0.25s ease-out;
 }
 
-.gnb .list > li > a:hover {
+.gnb .list > li:hover > a {
   color: #f00;
+}
+.gnb .list > li:hover .depth02 {
+  /* display: block; */
+  opacity: 1;
+  pointer-events: auto;
+}
+.gnb .list > li .depth02 {
+  background-color: #fff;
+  color: #666;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+  /* display: none; */
+}
+.gnb .list > li .depth02 li a {
+  display: block;
+  padding: 10px 0;
+}
+.gnb .list > li .depth02 li a:hover {
+  color: #111;
 }
 
 .language {
