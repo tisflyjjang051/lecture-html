@@ -103,13 +103,34 @@ h2 {
 }
 .products .products-banner a {
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
   width: calc(50% - 10px);
+}
+/* pseudo element */
+.products .products-banner a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+
+/* element의 쌓이는 순서 
+1. 위에서 아래로 아래에 있을 수록 위로 올라간다. 
+2. 만약 position 속성이 있으면 태그의 순서와 상관없이 위로 올라간다.
+3. 쌓이는 순서는 z-index로 바꿀 수 있다.
+*/
+
+.products .products-banner a:hover:before {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .products .products-banner a img {
   width: 100%;
   height: 480px;
   object-fit: cover;
-  border-radius: 20px;
 }
 .products .products-banner a .products-banner__title {
   position: absolute;
