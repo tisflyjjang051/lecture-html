@@ -304,6 +304,12 @@
                 </a>
               </li>
             </ul>
+            <button class="btn btn--round btn--fixed btn--next">
+              <span class="material-icons"> arrow_forward </span>
+            </button>
+            <button class="btn btn--round btn--fixed btn--prev">
+              <span class="material-icons"> arrow_back </span>
+            </button>
           </div>
         </div>
       </section>
@@ -320,6 +326,11 @@
         slidesPerView: 3,
         spaceBetween: 20,
         loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".news-banner .btn--next",
+          prevEl: ".news-banner .btn--prev",
+        },
       });
     </script>
   </body>
