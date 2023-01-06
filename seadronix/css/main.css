@@ -243,3 +243,45 @@ h2 {
 .investors .investors__list li:hover {
   filter: grayscale(0);
 }
+
+.news {
+  overflow: hidden;
+}
+.news .container {
+  flex-direction: column;
+  align-items: start;
+}
+.news .news-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.news .news-banner {
+  width: 100%;
+}
+
+.news .news__img {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.news .news__img img {
+  width: 100%;
+}
+.news .news__img .sticker {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fff;
+  background-color: var(--red);
+  padding: 10px;
+  /* position을 주면 inline도 상하패딩 먹음 */
+}
+.news .news__txt h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}

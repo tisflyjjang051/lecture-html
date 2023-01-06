@@ -22,9 +22,11 @@
     <!-- pretendard -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <script src="../js/aos.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -196,6 +198,115 @@
           </ul>
         </div>
       </section>
+      <!-- investor end -->
+      <section class="section news">
+        <div class="container">
+          <div class="news-title">
+            <h2><strong>Recent News</strong></h2>
+            <a href="" class="btn">전체보기<span class="material-icons"> navigate_next </span></a>
+          </div>
+          <div class="news-banner">
+            <ul class="news-banner__list swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/1/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/33/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/24/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/56/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/11/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/42/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/29/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="">
+                  <div class="news__img">
+                    <img src="https://picsum.photos/id/18/450/300" alt="" />
+                    <span class="sticker">전자신문</span>
+                  </div>
+                  <div class="news__txt">
+                    <h3>Singapore’s Smart Port Challenge announces 2022 start-up winners</h3>
+                    <p class="date">2022-03-02</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- section / article / nav / aside  ===> div로 대체 가능 -->
 
@@ -203,6 +314,12 @@
       AOS.init({
         duration: 1000,
         delay: 500,
+      });
+
+      const swiper = new Swiper(".news-banner", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
       });
     </script>
   </body>
