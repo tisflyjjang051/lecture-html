@@ -42,7 +42,9 @@ img {
   color: #fff;
   z-index: 99;
   height: 100px;
+  transition: all 0.25s ease;
 }
+
 .header .logo a {
   height: 100px;
   display: flex;
@@ -52,7 +54,25 @@ img {
 .header .logo a img {
   height: 50px;
   position: absolute;
+  transition: all 0.25s ease;
 }
+.header .logo a .logo__img--dark {
+  opacity: 0;
+}
+
+.header.on {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: #111;
+}
+.header.on .logo a .logo__img--dark {
+  opacity: 1;
+}
+.header.on .logo a .logo__img--light {
+  opacity: 0;
+}
+
 .gnb {
 }
 .gnb .list {

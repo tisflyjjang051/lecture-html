@@ -32,8 +32,8 @@
     <header class="header">
       <h1 class="logo">
         <a href="">
-          <img src="../images/layout/logo-dark.svg" alt="" />
-          <img src="../images/layout/logo-light.svg" alt="" />
+          <img src="../images/layout/logo-dark.svg" alt="" class="logo__img--dark" />
+          <img src="../images/layout/logo-light.svg" alt="" class="logo__img--light" />
         </a>
       </h1>
       <nav class="gnb">
@@ -332,6 +332,19 @@
           prevEl: ".news-banner .btn--prev",
         },
       });
+
+      const header = document.querySelector(".header");
+      window.addEventListener("scroll", function (e) {
+        console.log(window.scrollY);
+        if (window.scrollY > 0) {
+          header.classList.add("on");
+        } else {
+          header.classList.remove("on");
+        }
+      });
+      // window.addEventListener("click", function () {
+      //   alert("너가 클릭했냐?");
+      // });
     </script>
   </body>
 </html>
