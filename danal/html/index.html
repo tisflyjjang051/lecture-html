@@ -86,5 +86,28 @@
         </span>
       </section>
     </main>
+
+    <script>
+      //console.log(window);
+      //window.alert("아이디가 맞지 않습니다.");
+      //dom  (document object model);
+
+      //f(x) = x+5;
+
+      function plus5() {
+        console.log(x + 5);
+      }
+      function bank(money) {
+        console.log(money * 1.045);
+      }
+      const header = document.querySelector(".header");
+      const gnb = document.querySelector(".gnb");
+      gnb.addEventListener("mouseenter", function () {
+        header.classList.add("on");
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.classList.remove("on");
+      });
+    </script>
   </body>
 </html>
