@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/pretendard.css" />
     <link rel="stylesheet" href="../css/layout.css" />
   </head>
@@ -22,8 +23,28 @@
       <nav class="gnb">
         <h2 class="hidden">global navigation</h2>
         <ul class="gnb__list">
-          <li><a href="">다날</a></li>
-          <li><a href="">서비스</a></li>
+          <li>
+            <a href="">다날</a>
+            <ul class="gnb__list--sub">
+              <li><a href="">다날소개</a></li>
+              <li><a href="">인사말</a></li>
+              <li><a href="">경영이념</a></li>
+              <li><a href="">연혁/수상</a></li>
+              <li><a href="">계열회사</a></li>
+              <li><a href="">오시는길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">서비스</a>
+            <ul class="gnb__list--sub">
+              <li><a href="">휴대폰결제</a></li>
+              <li><a href="">신용카드결제</a></li>
+              <li><a href="">삼성페이휴대폰결제</a></li>
+              <li><a href="">통합결제다모음</a></li>
+              <li><a href="">유니온페이선불카드</a></li>
+              <li><a href="">페이코인결제</a></li>
+            </ul>
+          </li>
           <li><a href="">투자</a></li>
           <li><a href="">홍보</a></li>
           <li><a href="">채용</a></li>
@@ -33,11 +54,12 @@
       <a href="" class="link">결제내역조회</a>
     </header>
     <!-- header end -->
-    <main>
+
+    <!-- <main>
       <section>
         <h2 class="hidden">main video</h2>
         <video src="../video/danal_visual.mp4" autoplay muted loop></video>
       </section>
-    </main>
+    </main> -->
   </body>
 </html>

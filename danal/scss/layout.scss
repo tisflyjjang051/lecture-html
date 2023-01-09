@@ -12,20 +12,53 @@ p {
 }
 
 .header {
+  /* header */
+  $h: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
   padding: 0 50px;
+  height: $h;
   .logo {
     &__link {
       display: flex;
       align-items: center;
-      height: 100px;
+      height: $h;
     }
     &__img {
       height: 50px;
+    }
+  }
+  .gnb {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      > li {
+        > a {
+          //font-size: 18px;
+          //font-weight: 700;
+          font: {
+            size: 18px;
+            weight: 700;
+          }
+          display: flex;
+          align-items: center;
+          height: $h;
+          padding: 0 50px;
+          //outline: 1px solid red;
+        }
+      }
+      &--sub {
+        li {
+          a {
+            display: flex;
+            padding: 10px 0;
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }
