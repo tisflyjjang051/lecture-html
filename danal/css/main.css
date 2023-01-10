@@ -32,6 +32,36 @@
   animation: arrow-move 0.5s ease infinite alternate;
 }
 
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+.about .title-box h2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.about .title-box span {
+  color: #297bf6;
+}
+.about .title-box p {
+  font-size: 40px;
+  line-height: 1.25;
+}
+.about .btn {
+  display: inline-block;
+  border-radius: 100px;
+  margin-top: 50px;
+  padding: 20px 40px;
+  background-color: #297bf6;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  text-shadow: 1px 1px 0px #0a60e2,2px 2px 0px #0a60e2,3px 3px 0px #0a60e2,4px 4px 0px #0a60e2,5px 5px 0px #0a60e2,6px 6px 0px #0a60e2,7px 7px 0px #0a60e2,8px 8px 0px #0a60e2,9px 9px 0px #0a60e2,10px 10px 0px #0a60e2,11px 11px 0px #0a60e2,12px 12px 0px #0a60e2,13px 13px 0px #0a60e2,14px 14px 0px #0a60e2,15px 15px 0px #0a60e2,16px 16px 0px #0a60e2,17px 17px 0px #0a60e2,18px 18px 0px #0a60e2,19px 19px 0px #0a60e2,20px 20px 0px #0a60e2,21px 21px 0px #0a60e2,22px 22px 0px #0a60e2,23px 23px 0px #0a60e2,24px 24px 0px #0a60e2,25px 25px 0px #0a60e2,26px 26px 0px #0a60e2,27px 27px 0px #0a60e2,28px 28px 0px #0a60e2,29px 29px 0px #0a60e2,30px 30px 0px #0a60e2;
+}
+
 @keyframes arrow-move {
   0% {
     transform: translateY(0);

@@ -1,4 +1,5 @@
 @import "vars";
+@import "mixins";
 .main-video {
   video {
     width: 100%;
@@ -33,6 +34,37 @@
     justify-content: center;
     align-items: center;
     animation: arrow-move 0.5s ease infinite alternate;
+  }
+}
+.about {
+  padding: 100px 0;
+  text-align: center;
+  .title-box {
+    h2 {
+      font-size: 90px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+    span {
+      color: $blue;
+    }
+    p {
+      font-size: 40px;
+      line-height: 1.25;
+    }
+  }
+  .btn {
+    display: inline-block;
+    border-radius: 100px;
+    margin-top: 50px;
+    padding: 20px 40px;
+    background-color: $blue;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    overflow: hidden;
+    @include longShadow(30, darken($blue, 10));
   }
 }
 
