@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/pretendard.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -217,6 +219,91 @@
           </div>
         </div>
       </section>
+      <!-- block-chain end -->
+      <section class="platform section">
+        <div class="container">
+          <div class="title-box">
+            <h2>앞선 플랫폼</h2>
+            <p>다날 플랫폼으로 만나는 편리한 일상과 새로운 경험</p>
+          </div>
+          <div class="platform-swiper">
+            <ul class="platform-list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+              <li class="swiper-slide">
+                <div class="img-box">
+                  <img src="../images/main/img_family01.png" alt="" />
+                </div>
+                <span class="title">Robotcafe b;eat</span>
+                <span class="sticker">food tech</span>
+              </li>
+            </ul>
+            <button class="btn btn--prev"></button>
+            <button class="btn btn--next"></button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script>
@@ -239,6 +326,16 @@
       });
       gnb.addEventListener("mouseleave", function () {
         header.classList.remove("on");
+      });
+
+      const swiper = new Swiper(".platform-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 50,
+        loop: true,
+        navigation: {
+          nextEl: ".platform-swiper .btn--next",
+          prevEl: ".platform-swiper .btn--prev",
+        },
       });
     </script>
   </body>
