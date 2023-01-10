@@ -28,6 +28,7 @@ p {
   box-sizing: border-box;
   color: #fff;
   overflow: hidden;
+  top: 0;
   transition: all 0.25s ease;
 }
 .header.on {

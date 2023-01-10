@@ -8,3 +8,16 @@
   $shadow: unquote($shadow);
   text-shadow: $shadow;
 }
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin icon($code, $margin: 10px) {
+  display: inline-block;
+  content: $code;
+  margin-left: $margin;
+  font-family: "Material Icons";
+}
