@@ -137,6 +137,93 @@
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .title-box {
+      width: 45%;
+      h2 {
+        white-space: nowrap;
+      }
+    }
+    .contents {
+      width: 55%;
+      padding-top: 100px;
+      .block-chain__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        > li {
+          width: calc(50% - 15px);
+          padding: 30px;
+          box-sizing: border-box;
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 30px;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+          .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            h3 {
+              font-size: 20px;
+              text-transform: uppercase;
+            }
+            span {
+              display: flex;
+              align-items: center;
+            }
+            span:after {
+              font-size: 24px;
+              @include icon("trending_flat");
+            }
+          }
+          &:nth-child(1) .title span:after {
+            display: none;
+          }
+          ul {
+            li {
+              margin-top: 20px;
+              a {
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 100px;
+                position: relative;
+                .date {
+                  position: absolute;
+                  right: 0;
+                }
+              }
+            }
+          }
+          .num {
+            display: flex;
+            align-items: center;
+            &--main {
+              font-size: 48px;
+              font-weight: 900;
+            }
+            &--state {
+              display: flex;
+              align-items: center;
+              font-size: 20px;
+              .material-icons {
+                font-size: 48px;
+                color: red;
+              }
+            }
+            &--company {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @keyframes arrow-move {
   0% {

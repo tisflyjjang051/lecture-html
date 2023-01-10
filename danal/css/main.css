@@ -134,6 +134,94 @@
   background-attachment: fixed;
   color: #fff;
 }
+.block-chain .container {
+  display: flex;
+  justify-content: space-between;
+}
+.block-chain .container .title-box {
+  width: 45%;
+}
+.block-chain .container .title-box h2 {
+  white-space: nowrap;
+}
+.block-chain .container .contents {
+  width: 55%;
+  padding-top: 100px;
+}
+.block-chain .container .contents .block-chain__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.block-chain .container .contents .block-chain__list > li {
+  width: calc(50% - 15px);
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.block-chain .container .contents .block-chain__list > li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.block-chain .container .contents .block-chain__list > li .title h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.block-chain .container .contents .block-chain__list > li .title span {
+  display: flex;
+  align-items: center;
+}
+.block-chain .container .contents .block-chain__list > li .title span:after {
+  font-size: 24px;
+  display: inline-block;
+  content: "trending_flat";
+  margin-left: 10px;
+  font-family: "Material Icons";
+}
+.block-chain .container .contents .block-chain__list > li:nth-child(1) .title span:after {
+  display: none;
+}
+.block-chain .container .contents .block-chain__list > li ul li {
+  margin-top: 20px;
+}
+.block-chain .container .contents .block-chain__list > li ul li a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 100px;
+  position: relative;
+}
+.block-chain .container .contents .block-chain__list > li ul li a .date {
+  position: absolute;
+  right: 0;
+}
+.block-chain .container .contents .block-chain__list > li .num {
+  display: flex;
+  align-items: center;
+}
+.block-chain .container .contents .block-chain__list > li .num--main {
+  font-size: 48px;
+  font-weight: 900;
+}
+.block-chain .container .contents .block-chain__list > li .num--state {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.block-chain .container .contents .block-chain__list > li .num--state .material-icons {
+  font-size: 48px;
+  color: red;
+}
+.block-chain .container .contents .block-chain__list > li .num--company {
+  margin-left: auto;
+}
 
 @keyframes arrow-move {
   0% {
